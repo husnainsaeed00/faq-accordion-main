@@ -1,0 +1,101 @@
+@font-face {
+    font-family:worksane;
+    src: url("assets/fonts/static/WorkSans-Bold.ttf");
+}
+body{
+    background-color: rgb(196, 196, 231);
+    margin: 0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: none;
+    font-family: worksane;
+}
+.background-div {
+    background: url("assets/images/background-pattern-desktop.svg");
+    width: 100vw;
+    height: 45vh;
+    background-position: center top; /* Adjusted background position */
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed to cover to fill the container */
+}
+
+.faq-card {
+    width: 90%;
+    max-width: 450px; /* Added max-width to limit card width */
+    height:auto; /* Changed height to auto to adjust based on content */
+    margin: -150px auto; /* Adjusted margin to center card vertically and horizontally */
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:70px;
+}
+.title>h2{
+    font-size: 39px;
+    font-family:worksane;
+    font-weight: 700;
+}
+.title>.star-icon{
+    background: url("assets/images/icon-star.svg");
+    width:20%;
+    height:50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+}
+.question-open{
+    
+    padding:0px 2px;
+}
+.question-title{
+    display: flex;
+    font-size:20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-title>.minus-icon{
+    background: url(assets/images/icon-minus.svg);
+    width:38px;
+    height:38px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.question-ans{
+    padding:0px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font:regular;
+    font-weight: 100;
+    padding:0px 20px;
+    color: rgb(165, 154, 154);
+}
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 20px;
+}
+.question>h4:hover{
+    color:#874ecc;
+}
+.plus-icon{
+    background: url("assets/images/icon-plus.svg");
+    width:20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
